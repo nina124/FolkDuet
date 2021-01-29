@@ -1,0 +1,20 @@
+{
+    "arch": "Generator",
+    "dropout": 0.0,
+    "folk": true,
+    "init_len": 10,
+    "meta_nfc_cent": 32,
+    "nemb_duration": 64,
+    "nemb_meta": 32,
+    "nemb_pitch": 128,
+    "nembs": [
+        128,
+        64
+    ],
+    "nfc_cent": 128,
+    "nfc_left": 512,
+    "nhid": 256,
+    "nlayers": 2,
+    "only_config": false,
+    "pred_nfc": 512
+}
