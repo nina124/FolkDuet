@@ -1,11 +1,19 @@
-# FolkDuet
+# FolkDuet: When Counterpoint Meets Chinese Folk Melodies
+
+[paper](https://papers.nips.cc/paper/2020/file/bae876e53dab654a3d9d9768b1b7b91a-Paper.pdf) | [project](http://www2.ece.rochester.edu/projects/air/projects/FolkDuet.html)
+
+## Highlights
+
+In this paper, we propose a system named FolkDuet to automatically generate countermelodies for Chinese folk melodies, modelling the counterpoint concept in Western music theory while maintaining the Chinese folk style. FolkDuet is designed to support real-time human-machine collaborative duet improvisation, hence the algorithm is causal.
+
+![image](docs/task.png)
 
 ## Dependencies
 the following python packages are required
-torch==0.4.1 (we do not know why, but torch 1.x will give different (and of course worse) results, so please use torch 0.4.1)
-numpy
-music21
-glog
+- torch==0.4.1 (we do not know why, but torch 1.x will give different (and of course worse) results, so please use torch 0.4.1)
+- numpy
+- music21
+- glog
 
 
 ## How to run
@@ -30,3 +38,20 @@ python3 irl.py --bach_both results/bachHM --bach_self results/bachM --check_dir 
 ```
 python3 sample.py --check_dir results/pretrained
 ```
+
+## Citations
+Please consider citing our paper in your publications if the project helps your research. BibTeX reference is as follows.
+
+```
+@article{jiang2020counterpoint,
+  title={When Counterpoint Meets Chinese Folk Melodies},
+  author={Jiang, Nan and Jin, Sheng and Duan, Zhiyao and Zhang, Changshui},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  year={2020}
+}
+```
+
+## License
+
+For academic use, this project is licensed under the 2-clause BSD License - see the LICENSE file for details. For commercial use, please contact the authors. 
