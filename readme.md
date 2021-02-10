@@ -1,10 +1,15 @@
 # FolkDuet: When Counterpoint Meets Chinese Folk Melodies
 
-[paper](https://papers.nips.cc/paper/2020/file/bae876e53dab654a3d9d9768b1b7b91a-Paper.pdf) | [project](http://www2.ece.rochester.edu/projects/air/projects/FolkDuet.html)
+\[[paper](https://papers.nips.cc/paper/2020/file/bae876e53dab654a3d9d9768b1b7b91a-Paper.pdf)\] | \[[project page](http://www2.ece.rochester.edu/projects/air/projects/FolkDuet.html)\]
 
-## Highlights
+## Introduction
 
-In this paper, we propose a system named FolkDuet to automatically generate countermelodies for Chinese folk melodies, modelling the counterpoint concept in Western music theory while maintaining the Chinese folk style. FolkDuet is designed to support real-time human-machine collaborative duet improvisation, hence the algorithm is causal.
+This is the official implementation of 
+[*When Counterpoint Meets Chinese Folk Melodies*](https://papers.nips.cc/paper/2020/file/bae876e53dab654a3d9d9768b1b7b91a-Paper.pdf) (NeurIPS'2020) paper.
+
+In this work, we propose a system named FolkDuet to automatically generate countermelodies for Chinese folk melodies, 
+modelling the counterpoint concept in Western music theory while maintaining the Chinese folk style. 
+FolkDuet is designed to support real-time human-machine collaborative duet improvisation, hence the algorithm is causal.
 
 <div align="center">
     <img src="resources/intro.png" width="500"/>
@@ -12,12 +17,13 @@ In this paper, we propose a system named FolkDuet to automatically generate coun
 
 ## Dependencies
 the following python packages are required
-- torch==0.4.1 (we do not know why, but torch 1.x will give different (and of course worse) results, so please use torch 0.4.1)
+- torch==0.4.1 (we do not know why, but torch 1.x will give different (and of course worse) results, 
+so please use torch 0.4.1)
 - numpy
 - music21
 - glog
 
-## Getting Started
+## Usage
 ### How to run
 1.train Bach-HM and Bach-M model
 ```
@@ -54,6 +60,8 @@ Please consider citing our paper in your publications if the project helps your 
 }
 ```
 
-## License
 
-For academic use, this project is licensed under the 2-clause BSD License - see the LICENSE file for details. For commercial use, please contact the authors. 
+## License
+This code is freely available for free non-commercial use, and may be redistributed under these conditions. 
+Please, see the [LICENSE](LICENSE) for further details. 
+Third-party datasets and softwares are subject to their respective licenses. 
