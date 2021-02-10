@@ -7,7 +7,7 @@
 In this paper, we propose a system named FolkDuet to automatically generate countermelodies for Chinese folk melodies, modelling the counterpoint concept in Western music theory while maintaining the Chinese folk style. FolkDuet is designed to support real-time human-machine collaborative duet improvisation, hence the algorithm is causal.
 
 <div align="center">
-    <img src="resources/intro.png" width="400"/>
+    <img src="resources/intro.png" width="500"/>
 </div>
 
 ## Dependencies
@@ -17,8 +17,8 @@ the following python packages are required
 - music21
 - glog
 
-
-## How to run
+## Getting Started
+### How to run
 1.train Bach-HM and Bach-M model
 ```
 python3 main_note.py --arch BachHM --batch_size 256 --lr 0.05 --nfc_left 256 --nhid 128 --exp_dir results/bachHM
@@ -36,7 +36,7 @@ python3 main_note.py --arch StyleRewarder --batch_size 512 --folk --lr 0.05 --nf
 python3 irl.py --bach_both results/bachHM --bach_self results/bachM --check_dir results/generator_init --reward_dir results/style_init --exp_dir results/irl --raw
 ```
 
-## How to sample music
+### How to sample music
 ```
 python3 sample.py --check_dir results/pretrained
 ```
