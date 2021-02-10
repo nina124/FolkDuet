@@ -6,7 +6,9 @@
 
 In this paper, we propose a system named FolkDuet to automatically generate countermelodies for Chinese folk melodies, modelling the counterpoint concept in Western music theory while maintaining the Chinese folk style. FolkDuet is designed to support real-time human-machine collaborative duet improvisation, hence the algorithm is causal.
 
-![image](docs/task.png)
+<div align="center">
+    <img src="resources/intro.png" width="400"/>
+</div>
 
 ## Dependencies
 the following python packages are required
