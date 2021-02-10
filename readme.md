@@ -48,7 +48,7 @@ python3 sample.py --check_dir results/pretrained
 ```
 
 ## Citations
-Please consider citing our paper in your publications if the project helps your research. BibTeX reference is as follows.
+Please consider citing our paper in your publications, if the project helps your research. BibTeX reference is as follows.
 
 ```
 @article{jiang2020counterpoint,
